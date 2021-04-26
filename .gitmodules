@@ -1,0 +1,3 @@
+[submodule "mariadb-connector-cpp"]
+	path = dependancies/mariadb-connector-cpp
+	url = https://github.com/MariaDB-Corporation/mariadb-connector-cpp.git

@@ -1,0 +1,17 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "askForPassword": true,
+            "driver": "MariaDB",
+            "name": "cppdb",
+            "connectString": "Server=localhost;user id=admin;password=pass1234;",
+            "connectionTimeout": 1000
+        }
+    ]
+}

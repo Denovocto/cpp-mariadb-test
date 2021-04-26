@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  db:
+    container_name: mariadb-database
+    image: mariadb
+    restart: always
+    working_dir: /api
+    environment: 
+      MYSQL_ROOT_PASSWORD: pass123
+      MYSQL_DATABASE: cppDb
+  environment:
+    container_name: debian-environment
+    build:
+      context: .
+      dockerfile: "environment.dockerfile"
+    volumes:
+      - ../:/api
+    links:
+      - "db:database" 
